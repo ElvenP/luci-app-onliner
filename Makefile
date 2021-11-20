@@ -26,7 +26,7 @@ define Package/luci-app-onliner/postinst
 	chmod -R 755 /usr/share/onliner/*
 exit 0
 endef
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 
